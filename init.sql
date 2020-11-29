@@ -1,4 +1,9 @@
-CREATE TABLE users(
+CREATE TABLE nodes(
  id serial PRIMARY KEY,
- username VARCHAR (50) UNIQUE NOT NULL
+ data JSONB NOT NULL
+);
+
+CREATE TABLE links(
+ id serial PRIMARY KEY,
+ data JSONB NOT NULL
 );

@@ -7,8 +7,8 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: example
-      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: timbub12
+      POSTGRES_DB: deps
     ports:
       - 5432:5432
     volumes:

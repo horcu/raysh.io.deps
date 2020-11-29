@@ -8,17 +8,17 @@ Micronaut + PostgreSQL + Maven
 # CRUD
 ## Get All Users
 ```
-curl http://localhost:7777/users
+curl http://localhost:7777/nodes
 ```
 ## Get User
 ```
-curl http://localhost:7777/users/1
+curl http://localhost:7777/nodes/1
 ```
 ## Create/Update User
 ```
-curl -XPOST http://localhost:7777/users -H "Content-Type: application/json" -d '{"id":1,"username":"Vasya"}'
+curl -XPOST http://localhost:7777/nodes -H "Content-Type: application/json" -d '{"id":1,"data":"Vasya"}'
 ```
 ## Delete User
 ```
-curl -XDELETE http://localhost:7777/users/1
+curl -XDELETE http://localhost:7777/nodes/1
 ```

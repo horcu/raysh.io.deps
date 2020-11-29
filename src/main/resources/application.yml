@@ -2,6 +2,8 @@ micronaut:
     application:
         name: pg-example
     server:
+        cors:
+            enabled: true
         port: 7777
 
 postgres:
@@ -9,7 +11,7 @@ postgres:
         client:
             port: 5432
             host: localhost
-            database: postgres
-            user: postgres
-            password: example
+            database: deps
+            user: deps
+            password: timbub12
             maxSize: 5
