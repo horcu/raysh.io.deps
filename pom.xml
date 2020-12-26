@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>pg.example</groupId>
-    <artifactId>pg-example</artifactId>
+    <groupId>rayshio-deps-api</groupId>
+    <artifactId>rayshio-deps-api</artifactId>
     <version>0.1</version>
     <properties>
-        <exec.mainClass>pg.example.Application</exec.mainClass>
+        <exec.mainClass>raysh.io.deps_api.Application</exec.mainClass>
         <micronaut.version>1.0.0</micronaut.version>
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -91,6 +91,11 @@
             <artifactId>hamcrest-all</artifactId>
             <version>1.3</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.lucapino</groupId>
+            <artifactId>confluence-rest-client</artifactId>
+            <version>1.0.4</version>
         </dependency>
     </dependencies>
     <build>
