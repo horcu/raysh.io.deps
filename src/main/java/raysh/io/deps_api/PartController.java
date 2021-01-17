@@ -41,6 +41,7 @@ public class PartController {
 
     @Delete("/{partId}")
     public HttpStatus delete(String partId) {
+        logger.info("got in!");
         return crudService.deletePart(partId) ? HttpStatus.OK : HttpStatus.BAD_REQUEST;
     }
 }
